@@ -1,47 +1,52 @@
-{% extends "base.html" %}{%block content%}Details collection{% endblock%} {%block body%}
+{% extends "base.html" %}
+{% block content %}
+    Details collection
+{% endblock %}
+
+{% block body %}
 <style>
     * {
         margin: 0;
         padding: 0;
     }
-    
+
     html {
         font-size: 62.5%;
         box-sizing: border-box;
     }
-    
+
     body {
         height: 100vh;
         background-color: greenyellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
+
     h3 {
         color: antiquewhite;
         margin-left: 2rem;
     }
-    
+
     h1 {
         margin: 20px;
         word-spacing: 10px;
     }
-    
+
     .form {
-        margin: auto;
-        margin-top: 20%;
         padding: 30px;
         width: 250px;
         background-color: black;
         border-radius: 9px;
     }
-    
+
     .box {
         margin: 10px;
         padding: 4px;
         width: 200px;
-        border: 50px;
         border-radius: 7px;
     }
-    
+
     .button {
         background: orangered;
         width: auto;
@@ -51,24 +56,21 @@
         text-shadow: 0 1px 0 rgb(220, 150, 21);
         transition: all 1s;
     }
-    
+
     .button:hover {
         box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding: 1.2rem;
         margin: 1.2rem;
     }
-    
+
     .button:active {
         border-color: rgb(20, 16, 14);
     }
 </style>
+
 <div class="form">
     <form action="/login" method="post">
-        <!-- Name:
-    <input type="text" name="nm" placeholer="Name" />
-    <p><input type="submit" value="submit" /></p> -->
-        <!-- <form action="#"> -->
-        <h1 style="color: orangered;text-shadow: 3px 3px 3px violet;">
+        <h1 style="color: orangered;">
             <center>Submit Details</center>
         </h1>
         <h3>Nitrogen</h3>
@@ -92,8 +94,7 @@
         </select> -->
         <h3>Rainfall</h3>
         <input type="number" step="any" min="" max="" name="Rainfall" placeholder="Rainfall in mm" class="box" required /><br />
-
         <p><input type="submit" class="button" value=" Submit " /></p>
     </form>
 </div>
-{% endblock%}
+{% endblock %}
