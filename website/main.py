@@ -13,7 +13,7 @@ app=Flask(__name__)
 app.secret_key="Teams"
 @app.route("/")
 def home():
-    return render_template("index.html",cont="User")
+    return render_template("index1.html",cont="User")
 
 @app.route("/login",methods=['GET','POST'])
 def login():

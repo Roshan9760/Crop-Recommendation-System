@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    Details collection
+Details collection
 {% endblock %}
 
 {% block body %}
@@ -74,18 +74,24 @@
             <center>Submit Details</center>
         </h1>
         <h3>Nitrogen</h3>
-        </p><input type="number" step="any" min="1" max="200" name="Nitrogen" placeholder="Nitrogen in soil" class="box" required />
+        </p><input type="number" step="any" min="1" max="200" name="Nitrogen" placeholder="Nitrogen in soil" class="box"
+            required />
         <br />
         <h3>Phosphorous</h3>
-        <input type="number" step="any" min="1" max="200" name="Phosphorous" placeholder="Phosphorous in soil" class="box" required /><br />
+        <input type="number" step="any" min="1" max="200" name="Phosphorous" placeholder="Phosphorous in soil"
+            class="box" required /><br />
         <h3>Potassium</h3>
-        <input type="number" step="any" min="1" max="200" name="Potassium" placeholder="Potassium in soil" class="box" required /><br />
+        <input type="number" step="any" min="1" max="200" name="Potassium" placeholder="Potassium in soil" class="box"
+            required /><br />
         <h3>Temperature</h3>
-        <input type="number" step="any" min="1" max="65" name="Temperature" placeholder="Temperature in degree" class="box" required /><br />
+        <input type="number" step="any" min="1" max="65" name="Temperature" placeholder="Temperature in degree"
+            class="box" required /><br />
         <h3>Humidity</h3>
-        <input type="number" step="any" min="1" max="100" name="Humidity" placeholder="Humidity in percentage" class="box" required /><br />
+        <input type="number" step="any" min="1" max="100" name="Humidity" placeholder="Humidity in percentage"
+            class="box" required /><br />
         <h3>PH</h3>
-        <input type="number" step="any" min="1" max="14" name="PH" placeholder="PH from 1-14" class="box" required /><br />
+        <input type="number" step="any" min="1" max="14" name="PH" placeholder="PH from 1-14" class="box"
+            required /><br />
         <!-- <select name="PH" class="" id="selection">
             <option value="Select">Select</option>
             {%for i in range(1,15):%}
@@ -93,7 +99,8 @@
             {%endfor%}
         </select> -->
         <h3>Rainfall</h3>
-        <input type="number" step="any" min="" max="" name="Rainfall" placeholder="Rainfall in mm" class="box" required /><br />
+        <input type="number" step="any" min="" max="" name="Rainfall" placeholder="Rainfall in mm" class="box"
+            required /><br />
         <p><input type="submit" class="button" value=" Submit " /></p>
     </form>
 </div>
